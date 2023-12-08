@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #c2c2c285;
+  position: relative;
+  text-align: center;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-msg {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+nav {
+  background-color: black;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #317df7;
+  color: white;
+}
+
+#header1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: 15px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #06c506;
+  border: none;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  width: 100px;
+  margin: 4px 2px;
+}
+.button-login {
+  padding: 0px;
+  background-color: white;
+  color: black;
+}
+
+.button-login:hover {
+  background-color: gray;
+}
+
+.btn-group {
+  text-align: center;
+  margin-top: auto;
+}
+
+button:hover {
+  background-color: #010a01;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: #317df7;
+}
+
+#copyright {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff88;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+form input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+form a {
+  display: block;
+}
+
+.task-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.task-list > div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.team-forms {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.team-forms form {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff88;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.team-forms form input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.team-forms form button {
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.team-forms form a {
+  display: block;
+  margin-top: 10px;
+}
+
+.team-forms form:nth-child(2) {
+  padding: 6px 30px;
+}
+
+#main-header {
+  padding-top: 1em;
+  padding-bottom: 0.8em;
+  overflow: hidden;
+  background-color: #317df7;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* table inside header */
+#logo-nav-login {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#logo-nav-login tbody td:nth-child(1) {
+  text-align: left;
+  width: 20%;
+  min-width: 164px;
+}
+
+/* 2nd table cell - navigation bar */
+#logo-nav-login tbody td:nth-child(2) {
+  text-align: center;
+  width: 60%;
+}
+
+/* 3rd table cell - login button */
+#logo-nav-login tbody td:nth-child(3) {
+  text-align: right;
+  width: 20%;
+}
+
+/* brand logo, fire effect */
+#branding {
+  padding-left: 20px;
+}
+
+/* navigation bar list */
+#main-header nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* navigation bar list items */
+#main-header li {
+  display: inline;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* navigation bar links */
+#main-header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* navigation bar current page */
+#main-header .current a {
+  background-color: #317df7;
+}
+
+#main-header .current button {
+  background-color: gray;
+}
+
+/* span outside login button */
+#main-header #login {
+  padding-top: 0em;
+  float: right;
+  padding-right: 20px;
+  font-size: 18px;
+}
