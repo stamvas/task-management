@@ -8,7 +8,6 @@ body {
   background-color: #c2c2c285;
   position: relative;
   text-align: center;
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@ body {
 
 .welcome-msg {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 nav {
@@ -59,6 +58,7 @@ button {
   width: 100px;
   margin: 4px 2px;
 }
+
 .button-login {
   padding: 0px;
   background-color: white;
@@ -98,11 +98,6 @@ footer a:hover {
   text-align: left;
 }
 
-label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
 form {
   width: 300px;
   padding: 20px;
@@ -121,17 +116,6 @@ form input {
 
 form a {
   display: block;
-}
-
-.task-list {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
-}
-
-.task-list > div {
-  flex: 1;
-  margin: 0 10px;
 }
 
 ul {
@@ -216,6 +200,13 @@ ul {
   padding-left: 20px;
 }
 
+.branding-name {
+  color: black;
+  position: absolute;
+  top: 108px;
+  left: 70px;
+}
+
 /* navigation bar list */
 #main-header nav ul {
   margin: 0px;
@@ -251,4 +242,240 @@ ul {
   float: right;
   padding-right: 20px;
   font-size: 18px;
+}
+
+.task-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.create-list-form {
+  margin-top: 10px;
+}
+
+.task-list {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  max-width: calc(33.33% - 20px);
+}
+
+.task-list h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.task-list .details {
+  padding: 10px;
+}
+
+.task-list .details p {
+  margin: 5px 0;
+}
+
+.task-list .details p strong {
+  font-weight: bold;
+}
+
+.task-list .tasks {
+  margin-top: 10px;
+}
+
+.task-list .tasks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list .tasks ul li {
+  margin-bottom: 5px;
+}
+
+.delete-button-form {
+  background: none;
+  border: none;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.task-buttons {
+  position: static;
+  margin-top: 10px;
+}
+
+.delete-list-btn {
+  all: unset;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #0f0e0e2f;
+  padding: 2px;
+}
+
+.delete-list-btn:hover {
+  background-color: #0f0e0e66;
+}
+
+.edit-button {
+  background-color: #0f0e0e2f;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.edit-button:hover {
+  background-color: #0f0e0e66;
+}
+
+.assign-list-btn {
+  background-color: #0f0e0e2f;
+  padding: 2px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.assign-list-btn:hover {
+  background-color: #0f0e0e66;
+}
+
+.delete-task-btn {
+  all: unset;
+  cursor: pointer;
+}
+
+.delete-task-btn:hover {
+  background-color: unset;
+}
+
+.delete-task-btn {
+  background: none;
+  border: none;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.create-team-form {
+  margin-top: 10px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+#error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 700px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  font-family: sans-serif;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label,
+.form-container select,
+.form-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.form-container button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #4cae4c;
+}
+
+.cancel-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  width: 25%;
+  margin-left: 93px;
+}
+
+.cancel-button:hover {
+  background-color: #0056b3;
+}
+
+#add-user-btn {
+  width: 38%;
+  margin-left: 94px;
+}
+
+.register-link {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #06c506;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  width: 28%;
+  margin-left: 100px;
+}
+
+.register-link:hover {
+  background-color: #010a01;
 }
